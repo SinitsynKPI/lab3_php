@@ -1,9 +1,6 @@
 <?php
 require_once __DIR__ . '/Track.php';
 
-/**
- * Похідний клас ExplicitTrack (Варіант 14)
- */
 class ExplicitTrack extends Track {
     protected string $warningLabel;
 
@@ -16,7 +13,6 @@ class ExplicitTrack extends Track {
         return $this->warningLabel;
     }
 
-    // Перевизначення методу getInfo() з використанням parent::getInfo()
     public function getInfo(): string {
         $baseInfo = parent::getInfo();
         return "{$baseInfo} [Попередження: {$this->warningLabel}]";
