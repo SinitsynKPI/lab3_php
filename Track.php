@@ -1,7 +1,5 @@
 <?php
-/**
- * Базовий клас Track (Варіант 14)
- */
+
 class Track {
     protected string $title;
     protected string $artist;
