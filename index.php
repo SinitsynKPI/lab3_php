@@ -4,7 +4,6 @@ require_once __DIR__ . '/classes/Track.php';
 require_once __DIR__ . '/classes/ExplicitTrack.php';
 require_once __DIR__ . '/classes/Playlist.php';
 
-// Створення плейлиста та додавання об'єктів (і базового, і похідного класу)
 $playlist = new Playlist();
 
 $playlist->addTrack(new Track("Bohemian Rhapsody", "Queen", 354));
